@@ -26,7 +26,7 @@ def get_embeddings() -> HuggingFaceEmbeddings:
 @st.cache_resource
 def get_llm() -> Ollama:
     logging.info("Initializing LLaMA model...")
-    return Ollama(model="gemma3:27b")
+    return Ollama(model="llama3.3")
 
 class SoochowQASystem:
     # ===== 新增：關鍵字與網址對應表 =====
